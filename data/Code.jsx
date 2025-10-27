@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectGallery } from "eportfolio-shared";
 import "./Code.css"
 import heroImg from "../assets/Images/koibg.png"
+import koiDemo from "../assets/Videos/koiDemo.mp4"
 
 import kaleidoscopeImg from "../assets/Images/kaleidoscope/kaleidoscope.png"
 import kalCodeSnip1 from "../assets/Images/kaleidoscope/kalCodeSnip1.png"
@@ -240,6 +241,36 @@ export default function Code() {
           heading: "Formal Qualities",
           text: [
             "One goal of the piece was to allow the audience to feel relaxed, immersed, and surrounded by nature, reminiscing a pond through visuals and audio. The piece is not interactive, but it incorporates various elements in motion, influenced by randomness. To start, the background is a gradient of blue, attempting to mimic the various depths we see when looking at water. Next we have the personally designed and animated koi fish, produced with Adobe Illustrator and After Effects, which move with a particular pattern. However, they also have a factor of randomness, randomizing their colour animation and angle of trajectory. Likewise, we also have lily pads, which are randomly assigned flowers and slowly move across the screen and rotate with a random speed. This was to help mimic lily pads floating on water. Next, we have the randomized ripples appearing on the surface of the water to create more movement within the piece. Finally, to fully immerse, calm, and mesmerize the audience, I added very mellow and ambient audio in the background, creating a very zen feeling.",
+          ],
+        },
+        {
+          heading: "Context",
+          text: [
+            "The concept of generative and autonomous art is geometry and algorithms, encompassed by randomness. Although nature and technology are very different mediums, often seen contrasted to one another, I wanted to tie them together, showing that they have many similarities than people initially anticipate, while trying to create a more organic feeling piece. This piece attempts to connect generative art and nature, displaying the resemblance between the two - recognizing shapes and patterns in nature can be mirrored by geometry and algorithms in generative art respectively. For instance, we can see colour and visual patterns displayed on the fish and flowers. We can also see that there are movement or habitat patterns within nature, such as the rise and fall of calming waves in water, as well as fish migration patterns. This is reflected through the movement within the piece, as the lily pads slowly turn and move in a direction, as though following the current, as well as the fish moving based on an algorithm.",
+          ],
+        },
+        {
+          heading: "Technical Description",
+          text: [
+            "All the graphics assets were personally made (koi fish animation, lily pads, and flower / lily) through Adobe Illustrator and After Effects. To use these assets, this project required an external library called 'p5.play.js'. This library allowed me to create personal sprites and animations within my work. This assignment mostly took inspiration from workshop 1, where we were introduced to agents, as well as the concept of looped sound from workshop 2. As well, throughout the process, I also referenced various functions and libraries provided by p5.js."
+          ],
+        },
+        {
+          heading: "Code Structure and Flow",
+          text: [
+            "This project is essentially composed of three agents, where each object is assigned some variety of randomness. As this piece is not user interactive, the randomness or input is received from numerous data sources. One of these agents was a 'sprite' or animation, which required me to use an external library, p5.play.js. However, all the agents had a show() or draw() function, which displayed the frame / image when called, as well as an update() function, which allowed the agent to be reset with new random parameters, preventing me from having to create new agents everytime one went off screen. Looking at the main file, sketch.js, this encapsulates all the newly made objects. Firstly, we load all the assets in with preload(). Then, we set up loops to create all the objects we want to add to the canvas. Finally, in draw(), we displayed all the objects with particular layering in mind and updated them when necessary."
+          ],
+        },
+        {
+          heading: "Key Aspect",
+          text: [
+            "One key aspect of my solution would be animate() in fishAgent.js as this was probably one of the hardest and most frustrating features to implement. This function is meant to help algorithmically direct the path of the fish. Initially, I was looking into Flow Fields and Perlin Noise to try and direct the fishes' movement. However, I was extremely confused by the documentation and examples of code I was looking at. After giving up on trying to understand the articles, I considered trying to attempt a more simplistic, mathematical way of replicating Flow Fields and Perlin Noise. I was able to work out the trigonometry on paper and started implementing the solution in animate(). It required a couple trial and erros with certain values, but it eventually worked out and created the decently smooth pathing I was looking for.",
+          ],
+        },
+        {
+          heading: "Demo",
+          images: [
+            koiDemo,
           ],
         },
       ],
