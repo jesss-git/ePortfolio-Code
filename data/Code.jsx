@@ -270,7 +270,7 @@ export default function Code() {
         {
           heading: "Demo",
           images: [
-            koiDemo,
+            koiDemo
           ],
         },
       ],
