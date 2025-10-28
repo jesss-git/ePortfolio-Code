@@ -274,7 +274,7 @@ export default function Code() {
           ],
         },
       ],
-      link: "https://github.com/jesss-git/Geese-Invasion"
+      link: "https://github.com/jesss-git/Generative-Art-Koi-Fish"
     },
 
   ];
