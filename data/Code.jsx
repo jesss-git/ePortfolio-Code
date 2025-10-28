@@ -221,7 +221,6 @@ export default function Code() {
       tags: ["OOP", "JavaScript", "Illustrator", "After Effects"],
       sections:[
         {
-          link: "https://github.com/jesss-git/Audio-Kaleidoscope-Visualizer",
           images: [
             heroImg,
           ],
