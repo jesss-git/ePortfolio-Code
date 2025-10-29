@@ -3,6 +3,7 @@ import { ProjectGallery } from "eportfolio-shared";
 import "./Code.css"
 import heroImg from "../assets/Images/koibg.png"
 import koiDemo from "../assets/Videos/koiDemo.mp4"
+import koiFish from "../assets/Videos/koiFish.mov"
 
 import kaleidoscopeImg from "../assets/Images/kaleidoscope/kaleidoscope.png"
 import kalCodeSnip1 from "../assets/Images/kaleidoscope/kalCodeSnip1.png"
@@ -253,6 +254,14 @@ export default function Code() {
           heading: "Technical Description",
           text: [
             "All the graphics assets were personally made (koi fish animation, lily pads, and flower / lily) through Adobe Illustrator and After Effects. To use these assets, this project required an external library called 'p5.play.js'. This library allowed me to create personal sprites and animations within my work. This assignment mostly took inspiration from workshop 1, where we were introduced to agents, as well as the concept of looped sound from workshop 2. As well, throughout the process, I also referenced various functions and libraries provided by p5.js."
+          ],
+          images: [
+            koiFish,
+          ],
+        },
+        {
+          text: [
+            "Above is an example of one the ten koi fish animations I created using Adobe Illustrator and After Effects. After creating the animated movement of the fish in After Effects, I exported multiple frames of the animation to create a sprite.",
           ],
         },
         {
